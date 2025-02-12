@@ -55,22 +55,22 @@ namespace Do_An_DotNet
         }
         private void btn_NhaPP_Click(object sender, EventArgs e)
         {
-
+            LoadForm(new UC_NhaCC());
         }
 
         private void btn_donHang_Click(object sender, EventArgs e)
         {
-
+            LoadForm(new UC_DonHang());
         }
 
         private void btn_giaoDich_Click(object sender, EventArgs e)
         {
-
+            LoadForm(new UC_GiaoDich());
         }
 
         private void btn_doanhThu_Click(object sender, EventArgs e)
         {
-
+            LoadForm(new UC_DoanhThu());
         }
 
 

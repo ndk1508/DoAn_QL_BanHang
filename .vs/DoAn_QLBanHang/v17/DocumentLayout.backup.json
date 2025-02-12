@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Khoa\\DoAn_dotNet\\DoAn_QLBanHang\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C22F05-4E08-449D-9033-63AB9EB431A3}|Do_An_DotNet\\DoAn_BanHang.csproj|d:\\khoa\\doan_dotnet\\doan_qlbanhang\\do_an_dotnet\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8C22F05-4E08-449D-9033-63AB9EB431A3}|Do_An_DotNet\\DoAn_BanHang.csproj|solutionrelative:do_an_dotnet\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C22F05-4E08-449D-9033-63AB9EB431A3}|Do_An_DotNet\\DoAn_BanHang.csproj|d:\\khoa\\doan_dotnet\\doan_qlbanhang\\do_an_dotnet\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C8C22F05-4E08-449D-9033-63AB9EB431A3}|Do_An_DotNet\\DoAn_BanHang.csproj|solutionrelative:do_an_dotnet\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8C22F05-4E08-449D-9033-63AB9EB431A3}|Do_An_DotNet\\DoAn_BanHang.csproj|d:\\khoa\\doan_dotnet\\doan_qlbanhang\\do_an_dotnet\\uc_nhacc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C8C22F05-4E08-449D-9033-63AB9EB431A3}|Do_An_DotNet\\DoAn_BanHang.csproj|solutionrelative:do_an_dotnet\\uc_nhacc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "D:\\Khoa\\DoAn_dotNet\\DoAn_QLBanHang\\Do_An_DotNet\\frmMain.cs",
+              "RelativeDocumentMoniker": "Do_An_DotNet\\frmMain.cs",
+              "ToolTip": "D:\\Khoa\\DoAn_dotNet\\DoAn_QLBanHang\\Do_An_DotNet\\frmMain.cs*",
+              "RelativeToolTip": "Do_An_DotNet\\frmMain.cs*",
+              "ViewState": "AgIAACkAAAAAAAAAAAAhwEgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T11:42:04.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UC_NhaCC.cs [Design]",
+              "DocumentMoniker": "D:\\Khoa\\DoAn_dotNet\\DoAn_QLBanHang\\Do_An_DotNet\\UC_NhaCC.cs",
+              "RelativeDocumentMoniker": "Do_An_DotNet\\UC_NhaCC.cs",
+              "ToolTip": "D:\\Khoa\\DoAn_dotNet\\DoAn_QLBanHang\\Do_An_DotNet\\UC_NhaCC.cs [Design]",
+              "RelativeToolTip": "Do_An_DotNet\\UC_NhaCC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T11:41:31.058Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "D:\\Khoa\\DoAn_dotNet\\DoAn_QLBanHang\\Do_An_DotNet\\frmMain.cs",
+              "RelativeDocumentMoniker": "Do_An_DotNet\\frmMain.cs",
+              "ToolTip": "D:\\Khoa\\DoAn_dotNet\\DoAn_QLBanHang\\Do_An_DotNet\\frmMain.cs [Design]*",
+              "RelativeToolTip": "Do_An_DotNet\\frmMain.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T11:38:47.619Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

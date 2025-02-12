@@ -17,12 +17,6 @@ namespace Do_An_DotNet
         {
             InitializeComponent();
         }
-        
-        private void btn_Thoat_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btn_Login_Click_1(object sender, EventArgs e)
         {
             string connectionString = "Data Source=DESKTOP-N5BJBSG;Initial Catalog=QL_BanHang;Integrated Security=True";

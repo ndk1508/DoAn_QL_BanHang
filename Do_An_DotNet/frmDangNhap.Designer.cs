@@ -34,7 +34,6 @@
             this.txt_loginName = new System.Windows.Forms.TextBox();
             this.txt_Password = new System.Windows.Forms.TextBox();
             this.btn_Login = new System.Windows.Forms.Button();
-            this.btn_Thoat = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -97,17 +96,6 @@
             this.btn_Login.UseVisualStyleBackColor = false;
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click_1);
             // 
-            // btn_Thoat
-            // 
-            this.btn_Thoat.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Thoat.Location = new System.Drawing.Point(596, 406);
-            this.btn_Thoat.Name = "btn_Thoat";
-            this.btn_Thoat.Size = new System.Drawing.Size(118, 33);
-            this.btn_Thoat.TabIndex = 9;
-            this.btn_Thoat.Text = "Thoát";
-            this.btn_Thoat.UseVisualStyleBackColor = true;
-            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Do_An_DotNet.Properties.Resources.Conan;
@@ -123,7 +111,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 457);
-            this.Controls.Add(this.btn_Thoat);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.txt_Password);
@@ -149,6 +136,5 @@
         private System.Windows.Forms.TextBox txt_Password;
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btn_Thoat;
     }
 }
