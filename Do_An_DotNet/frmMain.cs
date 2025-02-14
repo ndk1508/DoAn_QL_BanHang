@@ -51,7 +51,7 @@ namespace Do_An_DotNet
 
         private void btn_sanPham_Click(object sender, EventArgs e)
         {
-            LoadForm(new UC_SanPham());
+            LoadForm(new UC_SanPham(pnlContent));
         }
         private void btn_NhaPP_Click(object sender, EventArgs e)
         {

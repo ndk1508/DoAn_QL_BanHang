@@ -21,3 +21,4 @@ D:\Khoa\DoAn_dotNet\DoAn_QLBanHang\Do_An_DotNet\obj\Debug\DoAn_BanHang.csproj.Co
 D:\Khoa\DoAn_dotNet\DoAn_QLBanHang\Do_An_DotNet\obj\Debug\DoAn_Ban.1D8C3402.Up2Date
 D:\Khoa\DoAn_dotNet\DoAn_QLBanHang\Do_An_DotNet\obj\Debug\Do_An_DotNet.exe
 D:\Khoa\DoAn_dotNet\DoAn_QLBanHang\Do_An_DotNet\obj\Debug\Do_An_DotNet.pdb
+D:\Khoa\DoAn_dotNet\DoAn_QLBanHang\Do_An_DotNet\obj\Debug\Do_An_DotNet.UC_ThemSanPham.resources
