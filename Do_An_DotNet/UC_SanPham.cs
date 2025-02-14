@@ -132,6 +132,15 @@ namespace Do_An_DotNet
             LoadSanPham(txt_timKiemSP.Text.Trim());
         }
 
+        private void dgv_danhsachSP_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgv_danhsachSP.Rows[e.RowIndex];
+                string chiTiet = $"Mã: {row.Cells["MA_SANPHAM"].Value}\nTên: {row.Cells["TEN_SANPHAM"].Value}\nLoại: {row.Cells["LOAI_SANPHAM"].Value}\nMô tả: {row.Cells["MOTA_SANPHAM"].Value}\nNgày cập nhật: {row.Cells["NGAYCAPPHAT_SANPHAM"].Value}\nSố lượng: {row.Cells["SOLUONGTON_SANPHAM"].Value}\nCông dụng: {row.Cells["CONGDUNG_SANPHAM"].Value}";
+                MessageBox.Show(chiTiet, "Chi Tiết Sản Phẩm", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
         private void UC_SanPham_Load(object sender, EventArgs e)
         {
             LoadSanPham();

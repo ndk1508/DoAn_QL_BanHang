@@ -132,6 +132,7 @@
             this.dgv_danhsachSP.Name = "dgv_danhsachSP";
             this.dgv_danhsachSP.Size = new System.Drawing.Size(874, 527);
             this.dgv_danhsachSP.TabIndex = 0;
+            this.dgv_danhsachSP.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_danhsachSP_CellDoubleClick);
             // 
             // UC_SanPham
             // 
