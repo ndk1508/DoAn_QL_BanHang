@@ -91,44 +91,6 @@ namespace Do_An_DotNet
             themSanPham.Dock = DockStyle.Fill; // Dock để full panel
         }
 
-        private void btn_xoaSP_Click(object sender, EventArgs e)// xóa sản phẩm
-        {
-            if (dgv_danhsachSP.CurrentRow != null) // Kiểm tra dòng hiện tại
-            {
-                int inmaSP;
-                if (int.TryParse(dgv_danhsachSP.CurrentRow.Cells["MA_SANPHAM"].Value.ToString(), out inmaSP))
-                {
-                    DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa sản phẩm này?",
-                                                          "Xác nhận xóa",
-                                                          MessageBoxButtons.YesNo,
-                                                          MessageBoxIcon.Warning);
-                    if (result == DialogResult.Yes)
-                    {
-                        using (SqlConnection conn = new SqlConnection(connectionString))
-                        {
-                            conn.Open();
-                            string query = "DELETE FROM SANPHAM WHERE MA_SANPHAM = @MA_SANPHAM";
-
-                            using (SqlCommand cmd = new SqlCommand(query, conn))
-                            {
-                                cmd.Parameters.AddWithValue("@MA_SANPHAM", inmaSP);
-                                cmd.ExecuteNonQuery();
-                            }
-                        }
-                        MessageBox.Show("Xóa sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        LoadSanPham(); // Cập nhật lại danh sách
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Không thể lấy mã sản phẩm! Vui lòng thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn sản phẩm cần xóa!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
         private void txt_timKiem_TextChanged(object sender, EventArgs e)
         {
             LoadSanPham(txt_timKiemSP.Text.Trim());
@@ -220,6 +182,104 @@ namespace Do_An_DotNet
             danhSachSua.Clear(); // Xóa danh sách sau khi cập nhật
             LoadSanPham(); // Load lại danh sách sản phẩm
         }
-        
+
+        private void btn_XoaSP_Click(object sender, EventArgs e)
+        {
+            if (dgv_danhsachSP.CurrentRow != null) // Kiểm tra dòng hiện tại
+            {
+                int inmaSP;
+                if (int.TryParse(dgv_danhsachSP.CurrentRow.Cells["MA_SANPHAM"].Value.ToString(), out inmaSP))
+                {
+                    DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa sản phẩm này cùng với phiếu nhập, hóa đơn, phiếu chi liên quan?",
+                                                          "Xác nhận xóa",
+                                                          MessageBoxButtons.YesNo,
+                                                          MessageBoxIcon.Warning);
+                    if (result == DialogResult.Yes)
+                    {
+                        using (SqlConnection conn = new SqlConnection(connectionString))
+                        {
+                            conn.Open();
+                            SqlTransaction transaction = conn.BeginTransaction(); // Bắt đầu transaction
+
+                            try
+                            {
+                                // 1. Xóa dữ liệu trong PHIEUNHAPHANG liên quan đến sản phẩm này
+                                string queryDeletePhieuNhap = "DELETE FROM PHIEUNHAPHANG WHERE MA_SANPHAM = @MA_SANPHAM";
+                                using (SqlCommand cmd = new SqlCommand(queryDeletePhieuNhap, conn, transaction))
+                                {
+                                    cmd.Parameters.AddWithValue("@MA_SANPHAM", inmaSP);
+                                    cmd.ExecuteNonQuery();
+                                }
+
+                                // 2. Xóa dữ liệu trong PHIEUCHI liên quan đến NSX của sản phẩm này
+                                string queryDeletePhieuChi = @"
+                            DELETE FROM PHIEUCHI 
+                            WHERE MA_NSX IN 
+                            (SELECT MA_NSX FROM NHA_SAN_XUAT WHERE MA_TH IN 
+                            (SELECT MA_TH FROM THUONGHIEU WHERE MA_SANPHAM = @MA_SANPHAM))";
+                                using (SqlCommand cmd = new SqlCommand(queryDeletePhieuChi, conn, transaction))
+                                {
+                                    cmd.Parameters.AddWithValue("@MA_SANPHAM", inmaSP);
+                                    cmd.ExecuteNonQuery();
+                                }
+
+                                // 3. Xóa dữ liệu trong NHA_SAN_XUAT
+                                string queryDeleteNSX = @"
+                            DELETE FROM NHA_SAN_XUAT 
+                            WHERE MA_TH IN 
+                            (SELECT MA_TH FROM THUONGHIEU WHERE MA_SANPHAM = @MA_SANPHAM)";
+                                using (SqlCommand cmd = new SqlCommand(queryDeleteNSX, conn, transaction))
+                                {
+                                    cmd.Parameters.AddWithValue("@MA_SANPHAM", inmaSP);
+                                    cmd.ExecuteNonQuery();
+                                }
+
+                                // 4. Xóa tất cả hóa đơn liên quan đến sản phẩm này
+                                string queryDeleteHoaDon = "DELETE FROM HOADON WHERE MA_SANPHAM = @MA_SANPHAM";
+                                using (SqlCommand cmd = new SqlCommand(queryDeleteHoaDon, conn, transaction))
+                                {
+                                    cmd.Parameters.AddWithValue("@MA_SANPHAM", inmaSP);
+                                    cmd.ExecuteNonQuery();
+                                }
+
+                                // 5. Xóa tất cả thương hiệu liên quan đến sản phẩm này (nếu có)
+                                string queryDeleteThuongHieu = "DELETE FROM THUONGHIEU WHERE MA_SANPHAM = @MA_SANPHAM";
+                                using (SqlCommand cmd = new SqlCommand(queryDeleteThuongHieu, conn, transaction))
+                                {
+                                    cmd.Parameters.AddWithValue("@MA_SANPHAM", inmaSP);
+                                    cmd.ExecuteNonQuery();
+                                }
+
+                                // 6. Cuối cùng, xóa sản phẩm trong bảng SANPHAM
+                                string queryDeleteSanPham = "DELETE FROM SANPHAM WHERE MA_SANPHAM = @MA_SANPHAM";
+                                using (SqlCommand cmd = new SqlCommand(queryDeleteSanPham, conn, transaction))
+                                {
+                                    cmd.Parameters.AddWithValue("@MA_SANPHAM", inmaSP);
+                                    cmd.ExecuteNonQuery();
+                                }
+
+                                transaction.Commit(); // Lưu thay đổi
+                                MessageBox.Show("Xóa sản phẩm, hóa đơn, phiếu nhập, phiếu chi thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                                LoadSanPham(); // Cập nhật lại danh sách
+                            }
+                            catch (Exception ex)
+                            {
+                                transaction.Rollback(); // Hoàn tác nếu lỗi xảy ra
+                                MessageBox.Show("Lỗi khi xóa sản phẩm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Không thể lấy mã sản phẩm! Vui lòng thử lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm cần xóa!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.lbl_vaiTro = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pnlContent = new System.Windows.Forms.Panel();
             this.btn_dangXuat = new System.Windows.Forms.PictureBox();
             this.btn_Home = new System.Windows.Forms.Button();
+            this.lbl_vaiTro = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_nhanVien = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -42,6 +41,7 @@
             this.btn_sanPham = new System.Windows.Forms.Button();
             this.btn_giaoDich = new System.Windows.Forms.Button();
             this.btn_donHang = new System.Windows.Forms.Button();
+            this.pnlContent = new System.Windows.Forms.Panel();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_dangXuat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,37 +67,6 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(298, 761);
             this.pnlMenu.TabIndex = 35;
-            // 
-            // lbl_vaiTro
-            // 
-            this.lbl_vaiTro.AutoSize = true;
-            this.lbl_vaiTro.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_vaiTro.Location = new System.Drawing.Point(91, 703);
-            this.lbl_vaiTro.Name = "lbl_vaiTro";
-            this.lbl_vaiTro.Size = new System.Drawing.Size(66, 23);
-            this.lbl_vaiTro.TabIndex = 36;
-            this.lbl_vaiTro.Text = "Admin";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(388, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 27);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TRANG CHỦ";
-            // 
-            // pnlContent
-            // 
-            this.pnlContent.BackColor = System.Drawing.Color.Silver;
-            this.pnlContent.BackgroundImage = global::Do_An_DotNet.Properties.Resources.Nen;
-            this.pnlContent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlContent.Location = new System.Drawing.Point(286, 1);
-            this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(900, 761);
-            this.pnlContent.TabIndex = 36;
             // 
             // btn_dangXuat
             // 
@@ -131,10 +100,31 @@
             this.btn_Home.UseVisualStyleBackColor = false;
             this.btn_Home.Click += new System.EventHandler(this.btn_Home_Click);
             // 
+            // lbl_vaiTro
+            // 
+            this.lbl_vaiTro.AutoSize = true;
+            this.lbl_vaiTro.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_vaiTro.Location = new System.Drawing.Point(91, 703);
+            this.lbl_vaiTro.Name = "lbl_vaiTro";
+            this.lbl_vaiTro.Size = new System.Drawing.Size(66, 23);
+            this.lbl_vaiTro.TabIndex = 36;
+            this.lbl_vaiTro.Text = "Admin";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(388, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 27);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "TRANG CHỦ";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Do_An_DotNet.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(29, -9);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(220, 221);
@@ -272,6 +262,16 @@
             this.btn_donHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_donHang.UseVisualStyleBackColor = false;
             this.btn_donHang.Click += new System.EventHandler(this.btn_donHang_Click);
+            // 
+            // pnlContent
+            // 
+            this.pnlContent.BackColor = System.Drawing.Color.Silver;
+            this.pnlContent.BackgroundImage = global::Do_An_DotNet.Properties.Resources.Nen;
+            this.pnlContent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlContent.Location = new System.Drawing.Point(286, 1);
+            this.pnlContent.Name = "pnlContent";
+            this.pnlContent.Size = new System.Drawing.Size(900, 761);
+            this.pnlContent.TabIndex = 36;
             // 
             // frmMain
             // 

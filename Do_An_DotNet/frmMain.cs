@@ -66,7 +66,7 @@ namespace Do_An_DotNet
 
         private void btn_giaoDich_Click(object sender, EventArgs e)
         {
-            LoadForm(new UC_GiaoDich());
+            LoadForm(new UC_GiaoDich(pnlContent));
         }
         private bool isLoggingOut = false; // Biến cờ kiểm tra đăng xuất
         // ---- Phân quyền

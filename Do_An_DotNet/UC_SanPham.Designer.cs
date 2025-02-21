@@ -31,11 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_suaSP = new System.Windows.Forms.Button();
-            this.btn_xoaSP = new System.Windows.Forms.Button();
             this.btn_themSP = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_timKiemSP = new System.Windows.Forms.TextBox();
             this.dgv_danhsachSP = new System.Windows.Forms.DataGridView();
+            this.btn_XoaSP = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_danhsachSP)).BeginInit();
             this.SuspendLayout();
@@ -52,8 +52,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_XoaSP);
             this.groupBox1.Controls.Add(this.btn_suaSP);
-            this.groupBox1.Controls.Add(this.btn_xoaSP);
             this.groupBox1.Controls.Add(this.btn_themSP);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txt_timKiemSP);
@@ -70,7 +70,7 @@
             // 
             this.btn_suaSP.Image = global::Do_An_DotNet.Properties.Resources.service__1_;
             this.btn_suaSP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_suaSP.Location = new System.Drawing.Point(674, 607);
+            this.btn_suaSP.Location = new System.Drawing.Point(691, 606);
             this.btn_suaSP.Name = "btn_suaSP";
             this.btn_suaSP.Size = new System.Drawing.Size(189, 49);
             this.btn_suaSP.TabIndex = 5;
@@ -79,26 +79,13 @@
             this.btn_suaSP.UseVisualStyleBackColor = true;
             this.btn_suaSP.Click += new System.EventHandler(this.btn_suaSP_Click);
             // 
-            // btn_xoaSP
-            // 
-            this.btn_xoaSP.Image = global::Do_An_DotNet.Properties.Resources.delete__1_;
-            this.btn_xoaSP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_xoaSP.Location = new System.Drawing.Point(334, 606);
-            this.btn_xoaSP.Name = "btn_xoaSP";
-            this.btn_xoaSP.Size = new System.Drawing.Size(131, 50);
-            this.btn_xoaSP.TabIndex = 4;
-            this.btn_xoaSP.Text = "Xóa";
-            this.btn_xoaSP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_xoaSP.UseVisualStyleBackColor = true;
-            this.btn_xoaSP.Click += new System.EventHandler(this.btn_xoaSP_Click);
-            // 
             // btn_themSP
             // 
             this.btn_themSP.Image = global::Do_An_DotNet.Properties.Resources.add__1_;
             this.btn_themSP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_themSP.Location = new System.Drawing.Point(95, 606);
+            this.btn_themSP.Location = new System.Drawing.Point(511, 606);
             this.btn_themSP.Name = "btn_themSP";
-            this.btn_themSP.Size = new System.Drawing.Size(165, 50);
+            this.btn_themSP.Size = new System.Drawing.Size(165, 49);
             this.btn_themSP.TabIndex = 3;
             this.btn_themSP.Text = "Thêm sản phẩm";
             this.btn_themSP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -135,6 +122,20 @@
             this.dgv_danhsachSP.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_danhsachSP_CellDoubleClick);
             this.dgv_danhsachSP.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_danhsachSP_CellEndEdit);
             // 
+            // btn_XoaSP
+            // 
+            this.btn_XoaSP.ForeColor = System.Drawing.Color.Red;
+            this.btn_XoaSP.Image = global::Do_An_DotNet.Properties.Resources.delete__1_;
+            this.btn_XoaSP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_XoaSP.Location = new System.Drawing.Point(326, 606);
+            this.btn_XoaSP.Name = "btn_XoaSP";
+            this.btn_XoaSP.Size = new System.Drawing.Size(165, 49);
+            this.btn_XoaSP.TabIndex = 6;
+            this.btn_XoaSP.Text = "Xoá";
+            this.btn_XoaSP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_XoaSP.UseVisualStyleBackColor = true;
+            this.btn_XoaSP.Click += new System.EventHandler(this.btn_XoaSP_Click);
+            // 
             // UC_SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,7 +162,7 @@
         private System.Windows.Forms.TextBox txt_timKiemSP;
         private System.Windows.Forms.DataGridView dgv_danhsachSP;
         private System.Windows.Forms.Button btn_suaSP;
-        private System.Windows.Forms.Button btn_xoaSP;
         private System.Windows.Forms.Button btn_themSP;
+        private System.Windows.Forms.Button btn_XoaSP;
     }
 }
