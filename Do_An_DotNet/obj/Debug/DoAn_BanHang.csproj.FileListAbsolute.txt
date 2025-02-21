@@ -115,3 +115,5 @@ D:\Khoa\DoAn_dotNet\DoAn_QL_BanHang\Do_An_DotNet\obj\Debug\DoAn_Ban.1D8C3402.Up2
 D:\Khoa\DoAn_dotNet\DoAn_QL_BanHang\Do_An_DotNet\obj\Debug\Do_An_DotNet.exe
 D:\Khoa\DoAn_dotNet\DoAn_QL_BanHang\Do_An_DotNet\obj\Debug\Do_An_DotNet.pdb
 D:\Khoa\DoAn_dotNet\DoAn_QL_BanHang\Do_An_DotNet\obj\Debug\Do_An_DotNet.UC_NhapTTGiaoDich.resources
+D:\Khoa\DoAn_dotNet\DoAn_QL_BanHang\Do_An_DotNet\bin\Debug\BCrypt.Net.dll
+D:\Khoa\DoAn_dotNet\DoAn_QL_BanHang\Do_An_DotNet\bin\Debug\BCrypt.Net.xml

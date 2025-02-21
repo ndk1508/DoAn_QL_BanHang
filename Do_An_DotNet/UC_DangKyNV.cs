@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using BCrypt.Net;
+
 
 namespace Do_An_DotNet
 {
@@ -47,18 +49,26 @@ namespace Do_An_DotNet
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
+                    // Kiểm tra số lượng nhân viên hiện có
+                    string countQuery = "SELECT COUNT(*) FROM NHANVIEN";
+                    SqlCommand countCmd = new SqlCommand(countQuery, conn);
+                    int count = (int)countCmd.ExecuteScalar();
+
+                    int maChucVu = (count == 0) ? 1 : 2; // Nếu chưa có tài khoản nào, đặt MA_CV = 1 (Admin), ngược lại là 2 (Nhân viên)
+
                     string query = "INSERT INTO NHANVIEN (TENTAIKHOAN, MATKHAU, MA_CV, SOCCCD, HOTEN_NV, GIOITINH, SDT_NV, EMAIL_NV, DIACHI_NV) " +
                                    "VALUES (@TENTAIKHOAN, @MATKHAU, @MA_CV, @SOCCCD, @HOTEN_NV, @GIOITINH, @SDT_NV, @EMAIL_NV, @DIACHI_NV)";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         string gioiTinh = cbo_gioiTinhNV.SelectedItem?.ToString() ?? "Không xác định";
-                        object maChucVu = cbo_chucVu.SelectedValue ?? 2; // Giả sử mặc định là 2 (Nhân viên)
-                        
+                        // object maChucVu = cbo_chucVu.SelectedItem ?? 2; // Giả sử mặc định là 2 (Nhân viên)
 
+                        // Mã hóa mật khẩu bằng BCrypt
+                        string hashedPassword = BCrypt.Net.BCrypt.HashPassword(txt_matKhauNV.Text.Trim());
 
                         cmd.Parameters.AddWithValue("@TENTAIKHOAN", txt_taiKhoanNV.Text.Trim());
-                        cmd.Parameters.AddWithValue("@MATKHAU", txt_matKhauNV.Text.Trim());
+                        cmd.Parameters.AddWithValue("@MATKHAU", hashedPassword);
                         cmd.Parameters.AddWithValue("@MA_CV", maChucVu);
                         cmd.Parameters.AddWithValue("@SOCCCD", txt_cccdNV.Text.Trim());
                         cmd.Parameters.AddWithValue("@HOTEN_NV", txt_hoTenNV.Text.Trim());
@@ -90,6 +100,11 @@ namespace Do_An_DotNet
             UC_NhanVien ucNhanVien = new UC_NhanVien(pnlContent);
             pnlContent.Controls.Add(ucNhanVien); // Thêm UC_NhanVien vào panel
             ucNhanVien.Dock = DockStyle.Fill;
+        }
+
+        private void UC_DangKyNV_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
