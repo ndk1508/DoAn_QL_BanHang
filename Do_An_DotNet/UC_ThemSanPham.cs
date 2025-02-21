@@ -55,8 +55,8 @@ namespace Do_An_DotNet
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-                    string query = @"INSERT INTO SANPHAM (TEN_SANPHAM, MA_LOAI, LOAI_SANPHAM, MOTA_SANPHAM, ANH_SANPHAM, NGAYCAPPHAT_SANPHAM, SOLUONGTON_SANPHAM, CONGDUNG_SANPHAM)
-                    VALUES (@TEN_SANPHAM, @MA_LOAI, @LOAI_SANPHAM, @MOTA_SANPHAM, @ANH_SANPHAM, @NGAYCAPPHAT_SANPHAM, @SOLUONGTON_SANPHAM, @CONGDUNG_SANPHAM)";
+                    string query = @"INSERT INTO SANPHAM (TEN_SANPHAM, MA_LOAI, LOAI_SANPHAM, MOTA_SANPHAM, ANH_SANPHAM, NGAYCAPPHAT_SANPHAM, SOLUONGTON_SANPHAM, CONGDUNG_SANPHAM, GIA_SANPHAM)
+                    VALUES (@TEN_SANPHAM, @MA_LOAI, @LOAI_SANPHAM, @MOTA_SANPHAM, @ANH_SANPHAM, @NGAYCAPPHAT_SANPHAM, @SOLUONGTON_SANPHAM, @CONGDUNG_SANPHAM, @GIA_SANPHAM)";
 
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
@@ -68,6 +68,7 @@ namespace Do_An_DotNet
                         cmd.Parameters.AddWithValue("@NGAYCAPPHAT_SANPHAM", dtp_ngaynhapHang.Value);
                         cmd.Parameters.AddWithValue("@SOLUONGTON_SANPHAM", num_soLuong.Value);
                         cmd.Parameters.AddWithValue("@CONGDUNG_SANPHAM", txt_congDung.Text);
+                        cmd.Parameters.AddWithValue("@GIA_SANPHAM", txt_giaSP.Text);
 
                         if (pic_anhSP.Image != null)
                         {
@@ -100,7 +101,5 @@ namespace Do_An_DotNet
             pnlContent.Controls.Add(ucSanPham);
             ucSanPham.Dock = DockStyle.Fill;
         }
-
-        
     }
 }

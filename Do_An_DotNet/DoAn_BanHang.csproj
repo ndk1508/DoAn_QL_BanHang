@@ -69,12 +69,6 @@
     <Compile Include="UC_DangKyNV.Designer.cs">
       <DependentUpon>UC_DangKyNV.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_DoanhThu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_DoanhThu.Designer.cs">
-      <DependentUpon>UC_DoanhThu.cs</DependentUpon>
-    </Compile>
     <Compile Include="UC_DonHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -141,9 +135,6 @@
     </Compile>
     <EmbeddedResource Include="UC_DangKyNV.resx">
       <DependentUpon>UC_DangKyNV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_DoanhThu.resx">
-      <DependentUpon>UC_DoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_DonHang.resx">
       <DependentUpon>UC_DonHang.cs</DependentUpon>
@@ -230,6 +221,81 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box-open1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoes %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card-payment %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manufacture %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nen1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Them.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\service %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-arrow %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

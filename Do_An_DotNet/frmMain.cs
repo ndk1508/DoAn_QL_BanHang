@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Winform_DoAn;
 
 namespace Do_An_DotNet
 {
@@ -60,20 +61,13 @@ namespace Do_An_DotNet
 
         private void btn_donHang_Click(object sender, EventArgs e)
         {
-            LoadForm(new UC_DonHang());
+            LoadForm(new UC_QuanLyDonHang());
         }
 
         private void btn_giaoDich_Click(object sender, EventArgs e)
         {
             LoadForm(new UC_GiaoDich());
         }
-
-        private void btn_doanhThu_Click(object sender, EventArgs e)
-        {
-            LoadForm(new UC_DoanhThu());
-        }
-
-
         private bool isLoggingOut = false; // Biến cờ kiểm tra đăng xuất
         // ---- Phân quyền
         private int maCV; // Lưu quyền của người dùng

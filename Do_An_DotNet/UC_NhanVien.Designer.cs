@@ -29,15 +29,14 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_dangKy = new System.Windows.Forms.Button();
-            this.btn_suaNhanvien = new System.Windows.Forms.Button();
-            this.btn_Thoat = new System.Windows.Forms.Button();
-            this.btn_xoaNhanvien = new System.Windows.Forms.Button();
             this.grb_dsNV = new System.Windows.Forms.GroupBox();
             this.btn_timKiem = new System.Windows.Forms.Label();
             this.dgv_QLNhanvien = new System.Windows.Forms.DataGridView();
             this.txt_timKiem = new System.Windows.Forms.TextBox();
             this.btn_lamMoi = new System.Windows.Forms.Button();
+            this.btn_xoaNhanvien = new System.Windows.Forms.Button();
+            this.btn_suaNhanvien = new System.Windows.Forms.Button();
+            this.btn_dangKy = new System.Windows.Forms.Button();
             this.grb_dsNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_QLNhanvien)).BeginInit();
             this.SuspendLayout();
@@ -52,49 +51,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ NHÂN VIÊN";
             // 
-            // btn_dangKy
-            // 
-            this.btn_dangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_dangKy.Location = new System.Drawing.Point(54, 693);
-            this.btn_dangKy.Name = "btn_dangKy";
-            this.btn_dangKy.Size = new System.Drawing.Size(147, 41);
-            this.btn_dangKy.TabIndex = 1;
-            this.btn_dangKy.Text = "Thêm nhân viên";
-            this.btn_dangKy.UseVisualStyleBackColor = true;
-            this.btn_dangKy.Click += new System.EventHandler(this.btn_dangKy_Click);
-            // 
-            // btn_suaNhanvien
-            // 
-            this.btn_suaNhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_suaNhanvien.Location = new System.Drawing.Point(249, 693);
-            this.btn_suaNhanvien.Name = "btn_suaNhanvien";
-            this.btn_suaNhanvien.Size = new System.Drawing.Size(147, 41);
-            this.btn_suaNhanvien.TabIndex = 4;
-            this.btn_suaNhanvien.Text = "Sửa";
-            this.btn_suaNhanvien.UseVisualStyleBackColor = true;
-            this.btn_suaNhanvien.Click += new System.EventHandler(this.btn_suaNhanvien_Click);
-            // 
-            // btn_Thoat
-            // 
-            this.btn_Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Thoat.Location = new System.Drawing.Point(699, 693);
-            this.btn_Thoat.Name = "btn_Thoat";
-            this.btn_Thoat.Size = new System.Drawing.Size(147, 41);
-            this.btn_Thoat.TabIndex = 5;
-            this.btn_Thoat.Text = "Thoát";
-            this.btn_Thoat.UseVisualStyleBackColor = true;
-            // 
-            // btn_xoaNhanvien
-            // 
-            this.btn_xoaNhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoaNhanvien.Location = new System.Drawing.Point(478, 693);
-            this.btn_xoaNhanvien.Name = "btn_xoaNhanvien";
-            this.btn_xoaNhanvien.Size = new System.Drawing.Size(147, 41);
-            this.btn_xoaNhanvien.TabIndex = 6;
-            this.btn_xoaNhanvien.Text = "Xóa";
-            this.btn_xoaNhanvien.UseVisualStyleBackColor = true;
-            this.btn_xoaNhanvien.Click += new System.EventHandler(this.btn_xoaNhanvien_Click);
-            // 
             // grb_dsNV
             // 
             this.grb_dsNV.Controls.Add(this.btn_timKiem);
@@ -104,7 +60,7 @@
             this.grb_dsNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grb_dsNV.Location = new System.Drawing.Point(46, 124);
             this.grb_dsNV.Name = "grb_dsNV";
-            this.grb_dsNV.Size = new System.Drawing.Size(800, 516);
+            this.grb_dsNV.Size = new System.Drawing.Size(808, 516);
             this.grb_dsNV.TabIndex = 7;
             this.grb_dsNV.TabStop = false;
             this.grb_dsNV.Text = "Danh sách nhân viên";
@@ -124,7 +80,7 @@
             this.dgv_QLNhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_QLNhanvien.Location = new System.Drawing.Point(0, 86);
             this.dgv_QLNhanvien.Name = "dgv_QLNhanvien";
-            this.dgv_QLNhanvien.Size = new System.Drawing.Size(788, 430);
+            this.dgv_QLNhanvien.Size = new System.Drawing.Size(802, 424);
             this.dgv_QLNhanvien.TabIndex = 10;
             this.dgv_QLNhanvien.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_QLNhanvien_CellEndEdit);
             // 
@@ -139,14 +95,63 @@
             // 
             // btn_lamMoi
             // 
+            this.btn_lamMoi.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_lamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_lamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_lamMoi.Location = new System.Drawing.Point(647, 27);
+            this.btn_lamMoi.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_lamMoi.Image = global::Do_An_DotNet.Properties.Resources.refresh_arrow__1_;
+            this.btn_lamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_lamMoi.Location = new System.Drawing.Point(641, 34);
             this.btn_lamMoi.Name = "btn_lamMoi";
             this.btn_lamMoi.Size = new System.Drawing.Size(147, 41);
             this.btn_lamMoi.TabIndex = 8;
             this.btn_lamMoi.Text = "Làm mới";
-            this.btn_lamMoi.UseVisualStyleBackColor = true;
+            this.btn_lamMoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_lamMoi.UseVisualStyleBackColor = false;
             this.btn_lamMoi.Click += new System.EventHandler(this.btn_lamMoi_Click_1);
+            // 
+            // btn_xoaNhanvien
+            // 
+            this.btn_xoaNhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_xoaNhanvien.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_xoaNhanvien.Image = global::Do_An_DotNet.Properties.Resources.delete__1_;
+            this.btn_xoaNhanvien.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_xoaNhanvien.Location = new System.Drawing.Point(668, 667);
+            this.btn_xoaNhanvien.Name = "btn_xoaNhanvien";
+            this.btn_xoaNhanvien.Size = new System.Drawing.Size(186, 52);
+            this.btn_xoaNhanvien.TabIndex = 6;
+            this.btn_xoaNhanvien.Text = "Xóa";
+            this.btn_xoaNhanvien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_xoaNhanvien.UseVisualStyleBackColor = true;
+            this.btn_xoaNhanvien.Click += new System.EventHandler(this.btn_xoaNhanvien_Click);
+            // 
+            // btn_suaNhanvien
+            // 
+            this.btn_suaNhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_suaNhanvien.Image = global::Do_An_DotNet.Properties.Resources.service__1_;
+            this.btn_suaNhanvien.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_suaNhanvien.Location = new System.Drawing.Point(373, 667);
+            this.btn_suaNhanvien.Name = "btn_suaNhanvien";
+            this.btn_suaNhanvien.Size = new System.Drawing.Size(186, 52);
+            this.btn_suaNhanvien.TabIndex = 4;
+            this.btn_suaNhanvien.Text = "Sửa";
+            this.btn_suaNhanvien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_suaNhanvien.UseVisualStyleBackColor = true;
+            this.btn_suaNhanvien.Click += new System.EventHandler(this.btn_suaNhanvien_Click);
+            // 
+            // btn_dangKy
+            // 
+            this.btn_dangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dangKy.Image = global::Do_An_DotNet.Properties.Resources.add__1_;
+            this.btn_dangKy.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_dangKy.Location = new System.Drawing.Point(46, 667);
+            this.btn_dangKy.Name = "btn_dangKy";
+            this.btn_dangKy.Size = new System.Drawing.Size(186, 52);
+            this.btn_dangKy.TabIndex = 1;
+            this.btn_dangKy.Text = "Thêm nhân viên";
+            this.btn_dangKy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_dangKy.UseVisualStyleBackColor = true;
+            this.btn_dangKy.Click += new System.EventHandler(this.btn_dangKy_Click);
             // 
             // UC_NhanVien
             // 
@@ -155,7 +160,6 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.grb_dsNV);
             this.Controls.Add(this.btn_xoaNhanvien);
-            this.Controls.Add(this.btn_Thoat);
             this.Controls.Add(this.btn_suaNhanvien);
             this.Controls.Add(this.btn_dangKy);
             this.Controls.Add(this.label1);
@@ -175,7 +179,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_dangKy;
         private System.Windows.Forms.Button btn_suaNhanvien;
-        private System.Windows.Forms.Button btn_Thoat;
         private System.Windows.Forms.Button btn_xoaNhanvien;
         private System.Windows.Forms.GroupBox grb_dsNV;
         private System.Windows.Forms.Label btn_timKiem;

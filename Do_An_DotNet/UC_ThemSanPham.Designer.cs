@@ -32,8 +32,6 @@
             this.txt_tenSanPham = new System.Windows.Forms.TextBox();
             this.cbo_loaiSP = new System.Windows.Forms.ComboBox();
             this.dtp_ngaynhapHang = new System.Windows.Forms.DateTimePicker();
-            this.pic_anhSP = new System.Windows.Forms.PictureBox();
-            this.btn_luuSP = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,8 +44,12 @@
             this.num_soLuong = new System.Windows.Forms.NumericUpDown();
             this.btn_chonAnh = new System.Windows.Forms.Button();
             this.btn_Huy = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_anhSP)).BeginInit();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_giaSP = new System.Windows.Forms.TextBox();
+            this.btn_luuSP = new System.Windows.Forms.Button();
+            this.pic_anhSP = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.num_soLuong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_anhSP)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_congDung
@@ -85,26 +87,6 @@
             this.dtp_ngaynhapHang.Name = "dtp_ngaynhapHang";
             this.dtp_ngaynhapHang.Size = new System.Drawing.Size(200, 20);
             this.dtp_ngaynhapHang.TabIndex = 5;
-            // 
-            // pic_anhSP
-            // 
-            this.pic_anhSP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pic_anhSP.Location = new System.Drawing.Point(137, 147);
-            this.pic_anhSP.Name = "pic_anhSP";
-            this.pic_anhSP.Size = new System.Drawing.Size(351, 318);
-            this.pic_anhSP.TabIndex = 6;
-            this.pic_anhSP.TabStop = false;
-            // 
-            // btn_luuSP
-            // 
-            this.btn_luuSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_luuSP.Location = new System.Drawing.Point(137, 634);
-            this.btn_luuSP.Name = "btn_luuSP";
-            this.btn_luuSP.Size = new System.Drawing.Size(110, 32);
-            this.btn_luuSP.TabIndex = 7;
-            this.btn_luuSP.Text = "Lưu";
-            this.btn_luuSP.UseVisualStyleBackColor = true;
-            this.btn_luuSP.Click += new System.EventHandler(this.btn_luuSP_Click);
             // 
             // label1
             // 
@@ -150,7 +132,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(17, 497);
+            this.label5.Location = new System.Drawing.Point(17, 535);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 20);
             this.label5.TabIndex = 12;
@@ -189,7 +171,7 @@
             // rtb_moTa
             // 
             this.rtb_moTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtb_moTa.Location = new System.Drawing.Point(137, 497);
+            this.rtb_moTa.Location = new System.Drawing.Point(137, 535);
             this.rtb_moTa.Name = "rtb_moTa";
             this.rtb_moTa.Size = new System.Drawing.Size(731, 103);
             this.rtb_moTa.TabIndex = 17;
@@ -217,19 +199,65 @@
             // btn_Huy
             // 
             this.btn_Huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Huy.Location = new System.Drawing.Point(262, 634);
+            this.btn_Huy.Image = global::Do_An_DotNet.Properties.Resources.logout__1_;
+            this.btn_Huy.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Huy.Location = new System.Drawing.Point(325, 671);
             this.btn_Huy.Name = "btn_Huy";
-            this.btn_Huy.Size = new System.Drawing.Size(110, 32);
+            this.btn_Huy.Size = new System.Drawing.Size(154, 44);
             this.btn_Huy.TabIndex = 20;
-            this.btn_Huy.Text = "Huỷ";
+            this.btn_Huy.Text = "Trờ về";
+            this.btn_Huy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Huy.UseVisualStyleBackColor = true;
             this.btn_Huy.Click += new System.EventHandler(this.btn_Huy_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(140, 492);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(112, 20);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Giá sản phẩm:";
+            // 
+            // txt_giaSP
+            // 
+            this.txt_giaSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_giaSP.Location = new System.Drawing.Point(262, 489);
+            this.txt_giaSP.Name = "txt_giaSP";
+            this.txt_giaSP.Size = new System.Drawing.Size(226, 26);
+            this.txt_giaSP.TabIndex = 21;
+            // 
+            // btn_luuSP
+            // 
+            this.btn_luuSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_luuSP.Image = global::Do_An_DotNet.Properties.Resources.diskette__1_;
+            this.btn_luuSP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_luuSP.Location = new System.Drawing.Point(137, 671);
+            this.btn_luuSP.Name = "btn_luuSP";
+            this.btn_luuSP.Size = new System.Drawing.Size(154, 44);
+            this.btn_luuSP.TabIndex = 7;
+            this.btn_luuSP.Text = "Lưu";
+            this.btn_luuSP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_luuSP.UseVisualStyleBackColor = true;
+            this.btn_luuSP.Click += new System.EventHandler(this.btn_luuSP_Click);
+            // 
+            // pic_anhSP
+            // 
+            this.pic_anhSP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_anhSP.Location = new System.Drawing.Point(137, 147);
+            this.pic_anhSP.Name = "pic_anhSP";
+            this.pic_anhSP.Size = new System.Drawing.Size(351, 318);
+            this.pic_anhSP.TabIndex = 6;
+            this.pic_anhSP.TabStop = false;
             // 
             // UC_ThemSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txt_giaSP);
             this.Controls.Add(this.btn_Huy);
             this.Controls.Add(this.btn_chonAnh);
             this.Controls.Add(this.num_soLuong);
@@ -250,8 +278,8 @@
             this.Controls.Add(this.txt_congDung);
             this.Name = "UC_ThemSanPham";
             this.Size = new System.Drawing.Size(900, 761);
-            ((System.ComponentModel.ISupportInitialize)(this.pic_anhSP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_soLuong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_anhSP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,5 +305,7 @@
         private System.Windows.Forms.NumericUpDown num_soLuong;
         private System.Windows.Forms.Button btn_chonAnh;
         private System.Windows.Forms.Button btn_Huy;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_giaSP;
     }
 }

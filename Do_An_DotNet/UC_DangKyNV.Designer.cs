@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_troVe = new System.Windows.Forms.Button();
-            this.btn_Luu = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cbo_gioiTinhNV = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -51,33 +49,11 @@
             this.txt_taiKhoanNV = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_dangKi = new System.Windows.Forms.Label();
+            this.btn_troVe = new System.Windows.Forms.Button();
+            this.btn_Luu = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btn_troVe
-            // 
-            this.btn_troVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_troVe.ForeColor = System.Drawing.Color.Red;
-            this.btn_troVe.Location = new System.Drawing.Point(714, 618);
-            this.btn_troVe.Name = "btn_troVe";
-            this.btn_troVe.Size = new System.Drawing.Size(123, 37);
-            this.btn_troVe.TabIndex = 9;
-            this.btn_troVe.Text = "Trở về";
-            this.btn_troVe.UseVisualStyleBackColor = true;
-            this.btn_troVe.Click += new System.EventHandler(this.btn_troVe_Click);
-            // 
-            // btn_Luu
-            // 
-            this.btn_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Luu.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btn_Luu.Location = new System.Drawing.Point(559, 618);
-            this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.Size = new System.Drawing.Size(125, 37);
-            this.btn_Luu.TabIndex = 8;
-            this.btn_Luu.Text = "Lưu";
-            this.btn_Luu.UseVisualStyleBackColor = true;
-            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
             // 
             // groupBox2
             // 
@@ -298,6 +274,36 @@
             this.lbl_dangKi.TabIndex = 5;
             this.lbl_dangKi.Text = "Đăng Kí Thành Viên";
             this.lbl_dangKi.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btn_troVe
+            // 
+            this.btn_troVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_troVe.ForeColor = System.Drawing.Color.Red;
+            this.btn_troVe.Image = global::Do_An_DotNet.Properties.Resources.logout__1_;
+            this.btn_troVe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_troVe.Location = new System.Drawing.Point(685, 618);
+            this.btn_troVe.Name = "btn_troVe";
+            this.btn_troVe.Size = new System.Drawing.Size(152, 52);
+            this.btn_troVe.TabIndex = 9;
+            this.btn_troVe.Text = "Trở về";
+            this.btn_troVe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_troVe.UseVisualStyleBackColor = true;
+            this.btn_troVe.Click += new System.EventHandler(this.btn_troVe_Click);
+            // 
+            // btn_Luu
+            // 
+            this.btn_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Luu.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btn_Luu.Image = global::Do_An_DotNet.Properties.Resources.add__1_;
+            this.btn_Luu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Luu.Location = new System.Drawing.Point(501, 618);
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(153, 52);
+            this.btn_Luu.TabIndex = 8;
+            this.btn_Luu.Text = "Lưu";
+            this.btn_Luu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Luu.UseVisualStyleBackColor = true;
+            this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
             // 
             // UC_DangKyNV
             // 

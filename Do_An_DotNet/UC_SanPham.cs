@@ -16,6 +16,7 @@ namespace Do_An_DotNet
     {
         private Panel pnlContent; // Biến để lưu Panel chính từ frmMain
         private string connectionString = "Data Source=DESKTOP-N5BJBSG;Initial Catalog=QL_BanHang;Integrated Security=True";
+        private Dictionary<int, Dictionary<string, object>> danhSachSua = new Dictionary<int, Dictionary<string, object>>();
 
         public UC_SanPham(Panel contentPanel)
         {
@@ -23,11 +24,11 @@ namespace Do_An_DotNet
             this.Dock = DockStyle.Fill;
             this.pnlContent = contentPanel;// Gán panel được truyền vào
             LoadSanPham();
-            
+
         }
         private void LoadSanPham(string tuKhoa = "")
         {
-            string query = @"SELECT MA_SANPHAM, ANH_SANPHAM, TEN_SANPHAM, LOAI_SANPHAM.TEN_LOAI AS LOAI_SANPHAM, MOTA_SANPHAM, NGAYCAPPHAT_SANPHAM, SOLUONGTON_SANPHAM, CONGDUNG_SANPHAM 
+            string query = @"SELECT MA_SANPHAM, ANH_SANPHAM, TEN_SANPHAM, LOAI_SANPHAM.TEN_LOAI AS LOAI_SANPHAM,GIA_SANPHAM, MOTA_SANPHAM, NGAYCAPPHAT_SANPHAM, SOLUONGTON_SANPHAM, CONGDUNG_SANPHAM 
                              FROM SANPHAM
                              LEFT JOIN LOAI_SANPHAM ON SANPHAM.MA_LOAI = LOAI_SANPHAM.MA_LOAI";
 
@@ -66,6 +67,7 @@ namespace Do_An_DotNet
                         dgv_danhsachSP.Columns["MA_SANPHAM"].HeaderText = "Mã Sản Phẩm";
                         dgv_danhsachSP.Columns["TEN_SANPHAM"].HeaderText = "Tên Sản Phẩm";
                         dgv_danhsachSP.Columns["LOAI_SANPHAM"].HeaderText = "Loại Sản Phẩm";
+                        dgv_danhsachSP.Columns["GIA_SANPHAM"].HeaderText = " Giá sản phẩm";
                         dgv_danhsachSP.Columns["MOTA_SANPHAM"].HeaderText = "Mô Tả";
                         dgv_danhsachSP.Columns["NGAYCAPPHAT_SANPHAM"].HeaderText = "Ngày Cập Nhật";
                         dgv_danhsachSP.Columns["SOLUONGTON_SANPHAM"].HeaderText = "Số Lượng Tồn";
@@ -105,7 +107,7 @@ namespace Do_An_DotNet
                         using (SqlConnection conn = new SqlConnection(connectionString))
                         {
                             conn.Open();
-                            string query = "DELETE FROM SANPHAM WHERE MA_SANPHAM = @MA_SANPHAM"; 
+                            string query = "DELETE FROM SANPHAM WHERE MA_SANPHAM = @MA_SANPHAM";
 
                             using (SqlCommand cmd = new SqlCommand(query, conn))
                             {
@@ -145,5 +147,79 @@ namespace Do_An_DotNet
         {
             LoadSanPham();
         }
+
+        //SỬA SẢN PHẨM
+
+        private void dgv_danhsachSP_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgv_danhsachSP.Rows[e.RowIndex];
+                int maSP = Convert.ToInt32(row.Cells["MA_SANPHAM"].Value); // Lấy mã sản phẩm
+
+                // Nếu mã sản phẩm chưa có trong danh sách sửa, thêm mới
+                if (!danhSachSua.ContainsKey(maSP))
+                {
+                    danhSachSua[maSP] = new Dictionary<string, object>();
+                }
+
+                string columnName = dgv_danhsachSP.Columns[e.ColumnIndex].Name; // Lấy tên cột sửa
+                object newValue = row.Cells[e.ColumnIndex].Value; // Giá trị mới
+
+                danhSachSua[maSP][columnName] = newValue; // Lưu vào danh sách sửa
+            }
+        }
+        private void btn_suaSP_Click(object sender, EventArgs e)
+        {
+            if (danhSachSua.Count == 0)
+            {
+                MessageBox.Show("Không có dữ liệu nào thay đổi!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                foreach (var sp in danhSachSua)
+                {
+                    int maSP = sp.Key; // Mã sản phẩm cần sửa
+                    Dictionary<string, object> changes = sp.Value; // Các giá trị đã sửa
+
+                    List<string> setClauses = new List<string>();
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.Connection = conn;
+
+                    foreach (var change in changes)
+                    {
+                        string column = change.Key;
+                        object value = change.Value ?? DBNull.Value;
+
+                        setClauses.Add($"{column} = @{column}");
+                        cmd.Parameters.AddWithValue($"@{column}", value);
+                    }
+
+                    if (setClauses.Count > 0)
+                    {
+                        string query = $"UPDATE SANPHAM SET {string.Join(", ", setClauses)} WHERE MA_SANPHAM = @MaSP";
+                        cmd.CommandText = query;
+                        cmd.Parameters.AddWithValue("@MaSP", maSP);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show($"Cập nhật sản phẩm {maSP} thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show($"Cập nhật sản phẩm {maSP} thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+
+            danhSachSua.Clear(); // Xóa danh sách sau khi cập nhật
+            LoadSanPham(); // Load lại danh sách sản phẩm
+        }
+        
     }
 }

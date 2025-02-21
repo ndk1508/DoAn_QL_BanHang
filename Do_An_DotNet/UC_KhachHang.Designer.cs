@@ -32,7 +32,6 @@
             this.btn_themkhachHang = new System.Windows.Forms.Button();
             this.btn_suaKhachHang = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_timkiemKhachhang = new System.Windows.Forms.Button();
             this.txt_timKiem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dgv_khachHang = new System.Windows.Forms.DataGridView();
@@ -58,7 +57,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(273, 43);
+            this.label1.Location = new System.Drawing.Point(273, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(344, 33);
             this.label1.TabIndex = 0;
@@ -69,11 +68,14 @@
             this.btn_themkhachHang.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btn_themkhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_themkhachHang.ForeColor = System.Drawing.Color.OldLace;
-            this.btn_themkhachHang.Location = new System.Drawing.Point(669, 224);
+            this.btn_themkhachHang.Image = global::Do_An_DotNet.Properties.Resources.add__1_;
+            this.btn_themkhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_themkhachHang.Location = new System.Drawing.Point(630, 233);
             this.btn_themkhachHang.Name = "btn_themkhachHang";
-            this.btn_themkhachHang.Size = new System.Drawing.Size(118, 34);
+            this.btn_themkhachHang.Size = new System.Drawing.Size(128, 48);
             this.btn_themkhachHang.TabIndex = 1;
             this.btn_themkhachHang.Text = "Thêm";
+            this.btn_themkhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_themkhachHang.UseVisualStyleBackColor = false;
             this.btn_themkhachHang.Click += new System.EventHandler(this.btn_themkhachHang_Click);
             // 
@@ -81,11 +83,14 @@
             // 
             this.btn_suaKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_suaKhachHang.ForeColor = System.Drawing.Color.Red;
-            this.btn_suaKhachHang.Location = new System.Drawing.Point(526, 224);
+            this.btn_suaKhachHang.Image = global::Do_An_DotNet.Properties.Resources.service__1_;
+            this.btn_suaKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_suaKhachHang.Location = new System.Drawing.Point(469, 233);
             this.btn_suaKhachHang.Name = "btn_suaKhachHang";
-            this.btn_suaKhachHang.Size = new System.Drawing.Size(118, 34);
+            this.btn_suaKhachHang.Size = new System.Drawing.Size(132, 48);
             this.btn_suaKhachHang.TabIndex = 4;
             this.btn_suaKhachHang.Text = "Sửa";
+            this.btn_suaKhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_suaKhachHang.UseVisualStyleBackColor = true;
             this.btn_suaKhachHang.Click += new System.EventHandler(this.btn_suaKhachHang_Click);
             // 
@@ -93,26 +98,16 @@
             // 
             this.groupBox1.Controls.Add(this.btn_hiengrb2);
             this.groupBox1.Controls.Add(this.btn_grb2);
-            this.groupBox1.Controls.Add(this.btn_timkiemKhachhang);
             this.groupBox1.Controls.Add(this.txt_timKiem);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.dgv_khachHang);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(30, 103);
+            this.groupBox1.Location = new System.Drawing.Point(30, 85);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(833, 355);
+            this.groupBox1.Size = new System.Drawing.Size(833, 343);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DANH SÁCH KHÁCH HÀNG";
-            // 
-            // btn_timkiemKhachhang
-            // 
-            this.btn_timkiemKhachhang.Image = global::Do_An_DotNet.Properties.Resources.pngtree_vector_search_icon_png_image_966647;
-            this.btn_timkiemKhachhang.Location = new System.Drawing.Point(456, 41);
-            this.btn_timkiemKhachhang.Name = "btn_timkiemKhachhang";
-            this.btn_timkiemKhachhang.Size = new System.Drawing.Size(85, 26);
-            this.btn_timkiemKhachhang.TabIndex = 5;
-            this.btn_timkiemKhachhang.UseVisualStyleBackColor = true;
             // 
             // txt_timKiem
             // 
@@ -161,9 +156,9 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txt_hoTenKH);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(30, 474);
+            this.groupBox2.Location = new System.Drawing.Point(30, 447);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(833, 274);
+            this.groupBox2.Size = new System.Drawing.Size(833, 301);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "THÊM KHÁCH HÀNG";
@@ -261,22 +256,29 @@
             // btn_grb2
             // 
             this.btn_grb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_grb2.Location = new System.Drawing.Point(465, 303);
+            this.btn_grb2.Image = global::Do_An_DotNet.Properties.Resources.add__1_;
+            this.btn_grb2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_grb2.Location = new System.Drawing.Point(395, 291);
             this.btn_grb2.Name = "btn_grb2";
-            this.btn_grb2.Size = new System.Drawing.Size(178, 34);
+            this.btn_grb2.Size = new System.Drawing.Size(206, 46);
             this.btn_grb2.TabIndex = 6;
             this.btn_grb2.Text = "Thêm khách hàng";
+            this.btn_grb2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_grb2.UseVisualStyleBackColor = true;
             this.btn_grb2.Click += new System.EventHandler(this.btn_grb2_Click);
             // 
             // btn_hiengrb2
             // 
             this.btn_hiengrb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_hiengrb2.Location = new System.Drawing.Point(649, 303);
+            this.btn_hiengrb2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_hiengrb2.Image = global::Do_An_DotNet.Properties.Resources.service__1_;
+            this.btn_hiengrb2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_hiengrb2.Location = new System.Drawing.Point(607, 291);
             this.btn_hiengrb2.Name = "btn_hiengrb2";
-            this.btn_hiengrb2.Size = new System.Drawing.Size(178, 34);
+            this.btn_hiengrb2.Size = new System.Drawing.Size(206, 46);
             this.btn_hiengrb2.TabIndex = 7;
             this.btn_hiengrb2.Text = "Sửa khách hàng";
+            this.btn_hiengrb2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_hiengrb2.UseVisualStyleBackColor = true;
             this.btn_hiengrb2.Click += new System.EventHandler(this.btn_hiengrb2_Click);
             // 
@@ -307,7 +309,6 @@
         private System.Windows.Forms.Button btn_themkhachHang;
         private System.Windows.Forms.Button btn_suaKhachHang;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btn_timkiemKhachhang;
         private System.Windows.Forms.TextBox txt_timKiem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgv_khachHang;

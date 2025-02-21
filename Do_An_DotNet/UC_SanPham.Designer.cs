@@ -30,7 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.btn_suaSP = new System.Windows.Forms.Button();
             this.btn_xoaSP = new System.Windows.Forms.Button();
             this.btn_themSP = new System.Windows.Forms.Button();
@@ -53,7 +52,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.btn_suaSP);
             this.groupBox1.Controls.Add(this.btn_xoaSP);
             this.groupBox1.Controls.Add(this.btn_themSP);
@@ -68,41 +66,42 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách sản phẩm";
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(762, 604);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(84, 36);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // btn_suaSP
             // 
-            this.btn_suaSP.Location = new System.Drawing.Point(574, 603);
+            this.btn_suaSP.Image = global::Do_An_DotNet.Properties.Resources.service__1_;
+            this.btn_suaSP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_suaSP.Location = new System.Drawing.Point(674, 607);
             this.btn_suaSP.Name = "btn_suaSP";
-            this.btn_suaSP.Size = new System.Drawing.Size(129, 37);
+            this.btn_suaSP.Size = new System.Drawing.Size(189, 49);
             this.btn_suaSP.TabIndex = 5;
             this.btn_suaSP.Text = "Sửa sản phẩm";
+            this.btn_suaSP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_suaSP.UseVisualStyleBackColor = true;
+            this.btn_suaSP.Click += new System.EventHandler(this.btn_suaSP_Click);
             // 
             // btn_xoaSP
             // 
-            this.btn_xoaSP.Location = new System.Drawing.Point(258, 602);
+            this.btn_xoaSP.Image = global::Do_An_DotNet.Properties.Resources.delete__1_;
+            this.btn_xoaSP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_xoaSP.Location = new System.Drawing.Point(334, 606);
             this.btn_xoaSP.Name = "btn_xoaSP";
-            this.btn_xoaSP.Size = new System.Drawing.Size(96, 38);
+            this.btn_xoaSP.Size = new System.Drawing.Size(131, 50);
             this.btn_xoaSP.TabIndex = 4;
             this.btn_xoaSP.Text = "Xóa";
+            this.btn_xoaSP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_xoaSP.UseVisualStyleBackColor = true;
             this.btn_xoaSP.Click += new System.EventHandler(this.btn_xoaSP_Click);
             // 
             // btn_themSP
             // 
-            this.btn_themSP.Location = new System.Drawing.Point(35, 602);
+            this.btn_themSP.Image = global::Do_An_DotNet.Properties.Resources.add__1_;
+            this.btn_themSP.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_themSP.Location = new System.Drawing.Point(95, 606);
             this.btn_themSP.Name = "btn_themSP";
-            this.btn_themSP.Size = new System.Drawing.Size(149, 38);
+            this.btn_themSP.Size = new System.Drawing.Size(165, 50);
             this.btn_themSP.TabIndex = 3;
             this.btn_themSP.Text = "Thêm sản phẩm";
+            this.btn_themSP.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_themSP.UseVisualStyleBackColor = true;
             this.btn_themSP.Click += new System.EventHandler(this.btn_themSP_Click);
             // 
@@ -127,12 +126,14 @@
             // 
             // dgv_danhsachSP
             // 
+            this.dgv_danhsachSP.AllowUserToAddRows = false;
             this.dgv_danhsachSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_danhsachSP.Location = new System.Drawing.Point(6, 58);
             this.dgv_danhsachSP.Name = "dgv_danhsachSP";
             this.dgv_danhsachSP.Size = new System.Drawing.Size(874, 527);
             this.dgv_danhsachSP.TabIndex = 0;
             this.dgv_danhsachSP.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_danhsachSP_CellDoubleClick);
+            this.dgv_danhsachSP.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_danhsachSP_CellEndEdit);
             // 
             // UC_SanPham
             // 
@@ -159,7 +160,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_timKiemSP;
         private System.Windows.Forms.DataGridView dgv_danhsachSP;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btn_suaSP;
         private System.Windows.Forms.Button btn_xoaSP;
         private System.Windows.Forms.Button btn_themSP;
