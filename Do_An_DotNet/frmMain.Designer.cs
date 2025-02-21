@@ -65,14 +65,14 @@
             this.pnlMenu.Controls.Add(this.btn_donHang);
             this.pnlMenu.Location = new System.Drawing.Point(2, 1);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(288, 761);
+            this.pnlMenu.Size = new System.Drawing.Size(298, 761);
             this.pnlMenu.TabIndex = 35;
             // 
             // lbl_vaiTro
             // 
             this.lbl_vaiTro.AutoSize = true;
             this.lbl_vaiTro.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_vaiTro.Location = new System.Drawing.Point(95, 670);
+            this.lbl_vaiTro.Location = new System.Drawing.Point(91, 703);
             this.lbl_vaiTro.Name = "lbl_vaiTro";
             this.lbl_vaiTro.Size = new System.Drawing.Size(66, 23);
             this.lbl_vaiTro.TabIndex = 36;
@@ -102,7 +102,7 @@
             // btn_dangXuat
             // 
             this.btn_dangXuat.Image = global::Do_An_DotNet.Properties.Resources.Logout11;
-            this.btn_dangXuat.Location = new System.Drawing.Point(169, 651);
+            this.btn_dangXuat.Location = new System.Drawing.Point(197, 684);
             this.btn_dangXuat.Margin = new System.Windows.Forms.Padding(5);
             this.btn_dangXuat.Name = "btn_dangXuat";
             this.btn_dangXuat.Size = new System.Drawing.Size(52, 52);
@@ -121,7 +121,7 @@
             this.btn_Home.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Home.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_Home.Image = global::Do_An_DotNet.Properties.Resources.house__1_;
-            this.btn_Home.Location = new System.Drawing.Point(-1, 149);
+            this.btn_Home.Location = new System.Drawing.Point(-1, 195);
             this.btn_Home.Name = "btn_Home";
             this.btn_Home.Size = new System.Drawing.Size(287, 62);
             this.btn_Home.TabIndex = 37;
@@ -133,11 +133,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Do_An_DotNet.Properties.Resources.cr7;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 5);
+            this.pictureBox1.Image = global::Do_An_DotNet.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(29, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(220, 136);
+            this.pictureBox1.Size = new System.Drawing.Size(220, 221);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
@@ -153,7 +153,7 @@
             this.btn_nhanVien.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_nhanVien.Image = global::Do_An_DotNet.Properties.Resources.business__2_;
             this.btn_nhanVien.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btn_nhanVien.Location = new System.Drawing.Point(0, 217);
+            this.btn_nhanVien.Location = new System.Drawing.Point(0, 263);
             this.btn_nhanVien.Name = "btn_nhanVien";
             this.btn_nhanVien.Size = new System.Drawing.Size(285, 62);
             this.btn_nhanVien.TabIndex = 23;
@@ -164,8 +164,8 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Do_An_DotNet.Properties.Resources.admin1;
-            this.pictureBox2.Location = new System.Drawing.Point(33, 651);
+            this.pictureBox2.Image = global::Do_An_DotNet.Properties.Resources.user__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(29, 684);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(54, 53);
@@ -184,9 +184,9 @@
             this.btn_khachHang.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_khachHang.Image = global::Do_An_DotNet.Properties.Resources.rating__3_;
             this.btn_khachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_khachHang.Location = new System.Drawing.Point(-1, 285);
+            this.btn_khachHang.Location = new System.Drawing.Point(-1, 331);
             this.btn_khachHang.Name = "btn_khachHang";
-            this.btn_khachHang.Size = new System.Drawing.Size(289, 62);
+            this.btn_khachHang.Size = new System.Drawing.Size(286, 62);
             this.btn_khachHang.TabIndex = 24;
             this.btn_khachHang.Text = "Quản lý khách hàng";
             this.btn_khachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -204,9 +204,9 @@
             this.btn_NhaCC.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_NhaCC.Image = global::Do_An_DotNet.Properties.Resources.manufacture__1_;
             this.btn_NhaCC.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_NhaCC.Location = new System.Drawing.Point(-4, 557);
+            this.btn_NhaCC.Location = new System.Drawing.Point(-1, 603);
             this.btn_NhaCC.Name = "btn_NhaCC";
-            this.btn_NhaCC.Size = new System.Drawing.Size(290, 62);
+            this.btn_NhaCC.Size = new System.Drawing.Size(286, 62);
             this.btn_NhaCC.TabIndex = 30;
             this.btn_NhaCC.Text = "Nhà cung cấp";
             this.btn_NhaCC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -224,9 +224,9 @@
             this.btn_sanPham.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_sanPham.Image = global::Do_An_DotNet.Properties.Resources.shoes__1_;
             this.btn_sanPham.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btn_sanPham.Location = new System.Drawing.Point(0, 353);
+            this.btn_sanPham.Location = new System.Drawing.Point(0, 399);
             this.btn_sanPham.Name = "btn_sanPham";
-            this.btn_sanPham.Size = new System.Drawing.Size(290, 62);
+            this.btn_sanPham.Size = new System.Drawing.Size(285, 62);
             this.btn_sanPham.TabIndex = 26;
             this.btn_sanPham.Text = "Quản lý sản phẩm";
             this.btn_sanPham.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -244,9 +244,9 @@
             this.btn_giaoDich.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_giaoDich.Image = global::Do_An_DotNet.Properties.Resources.card_payment__1_;
             this.btn_giaoDich.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_giaoDich.Location = new System.Drawing.Point(-5, 421);
+            this.btn_giaoDich.Location = new System.Drawing.Point(-1, 467);
             this.btn_giaoDich.Name = "btn_giaoDich";
-            this.btn_giaoDich.Size = new System.Drawing.Size(290, 62);
+            this.btn_giaoDich.Size = new System.Drawing.Size(286, 62);
             this.btn_giaoDich.TabIndex = 27;
             this.btn_giaoDich.Text = "Quản lý giao dịch";
             this.btn_giaoDich.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -264,9 +264,9 @@
             this.btn_donHang.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_donHang.Image = global::Do_An_DotNet.Properties.Resources.invoice__1_;
             this.btn_donHang.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_donHang.Location = new System.Drawing.Point(-3, 489);
+            this.btn_donHang.Location = new System.Drawing.Point(-1, 535);
             this.btn_donHang.Name = "btn_donHang";
-            this.btn_donHang.Size = new System.Drawing.Size(288, 62);
+            this.btn_donHang.Size = new System.Drawing.Size(286, 62);
             this.btn_donHang.TabIndex = 29;
             this.btn_donHang.Text = "Quản lý đơn hàng";
             this.btn_donHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

@@ -41,7 +41,7 @@ namespace Do_An_DotNet
                         dgv_QLNhanvien.Columns["HOTEN_NV"].Width = 160; // Cột họ tên rộng hơn
                         dgv_QLNhanvien.Columns["MA_NV"].Width = 60; 
                         dgv_QLNhanvien.Columns["GIOITINH"].Width = 80;
-                        dgv_QLNhanvien.Columns["MA_CV"].Width = 60;
+                        dgv_QLNhanvien.Columns["MA_CV"].Width = 75;
                         dgv_QLNhanvien.Columns["EMAIL_NV"].Width = 145;
                         dgv_QLNhanvien.Columns["TENTAIKHOAN"].Width = 140;
                         // Kiểm tra nếu bảng trống

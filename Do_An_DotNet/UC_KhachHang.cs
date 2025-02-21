@@ -46,6 +46,12 @@ namespace Do_An_DotNet
                         DataTable dt = new DataTable();
                         da.Fill(dt);
                         dgv_khachHang.DataSource = dt;
+                        // Cài đặt độ rộng cột
+                        dgv_khachHang.Columns["HOTEN_KH"].Width = 160; // Cột họ tên rộng hơn
+                        dgv_khachHang.Columns["MA_KH"].Width = 80;
+                        dgv_khachHang.Columns["SDT_KH"].Width = 120;
+                        dgv_khachHang.Columns["EMAIL_KH"].Width = 145;
+                        dgv_khachHang.Columns["DIACHI_KH"].Width = 180;
                     }
                 }
             }   
