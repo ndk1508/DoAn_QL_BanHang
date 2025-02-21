@@ -32,6 +32,12 @@ namespace Do_An_DotNet
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 dgv_phieuNhap.DataSource = dt;
+                // Cài đặt độ rộng cột
+                dgv_phieuNhap.Columns["STT_PN"].Width = 80; // Cột họ tên rộng hơn
+                dgv_phieuNhap.Columns["NGAYLAP_PN"].Width = 160;
+                dgv_phieuNhap.Columns["TONGTIEN_PN"].Width = 180;
+                dgv_phieuNhap.Columns["CHUNGTUGOC_PN"].Width = 175;
+                dgv_phieuNhap.Columns["TONGTIENTHUEGTGT"].Width = 160;
             }
         }
         private void LoadPhieuChi()
@@ -43,6 +49,11 @@ namespace Do_An_DotNet
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 dgv_phieuChi.DataSource = dt;
+                // Cài đặt độ rộng cột
+                dgv_phieuChi.Columns["STT_PC"].Width = 80; // Cột họ tên rộng hơn
+                dgv_phieuChi.Columns["NGAYLAP_PC"].Width = 180;
+                dgv_phieuChi.Columns["SOTIENTHANHTOAN_PC"].Width = 200;
+                dgv_phieuChi.Columns["DIENGIAI_PC"].Width = 300;
             }
         }
 

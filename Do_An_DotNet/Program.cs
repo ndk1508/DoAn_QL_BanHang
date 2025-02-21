@@ -16,7 +16,7 @@ namespace Do_An_DotNet
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDangNhap());
+            Application.Run(new frmMain());
         }
     }
 }

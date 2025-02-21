@@ -41,44 +41,44 @@
             // lbl_DangNhap
             // 
             this.lbl_DangNhap.AutoSize = true;
-            this.lbl_DangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_DangNhap.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lbl_DangNhap.Location = new System.Drawing.Point(284, 29);
+            this.lbl_DangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_DangNhap.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lbl_DangNhap.Location = new System.Drawing.Point(321, 107);
             this.lbl_DangNhap.Name = "lbl_DangNhap";
-            this.lbl_DangNhap.Size = new System.Drawing.Size(187, 33);
+            this.lbl_DangNhap.Size = new System.Drawing.Size(196, 33);
             this.lbl_DangNhap.TabIndex = 2;
             this.lbl_DangNhap.Text = "ĐĂNG NHẬP";
             // 
             // lbl_Password
             // 
             this.lbl_Password.AutoSize = true;
-            this.lbl_Password.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Password.Location = new System.Drawing.Point(242, 163);
+            this.lbl_Password.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Password.Location = new System.Drawing.Point(279, 241);
             this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(83, 21);
+            this.lbl_Password.Size = new System.Drawing.Size(94, 23);
             this.lbl_Password.TabIndex = 3;
             this.lbl_Password.Text = "Mật khẩu:";
             // 
             // lbl_loginName
             // 
             this.lbl_loginName.AutoSize = true;
-            this.lbl_loginName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_loginName.Location = new System.Drawing.Point(242, 115);
+            this.lbl_loginName.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_loginName.Location = new System.Drawing.Point(279, 193);
             this.lbl_loginName.Name = "lbl_loginName";
-            this.lbl_loginName.Size = new System.Drawing.Size(125, 21);
+            this.lbl_loginName.Size = new System.Drawing.Size(136, 23);
             this.lbl_loginName.TabIndex = 4;
             this.lbl_loginName.Text = "Tên đăng nhập:";
             // 
             // txt_loginName
             // 
-            this.txt_loginName.Location = new System.Drawing.Point(387, 114);
+            this.txt_loginName.Location = new System.Drawing.Point(424, 192);
             this.txt_loginName.Name = "txt_loginName";
             this.txt_loginName.Size = new System.Drawing.Size(291, 26);
             this.txt_loginName.TabIndex = 5;
             // 
             // txt_Password
             // 
-            this.txt_Password.Location = new System.Drawing.Point(387, 160);
+            this.txt_Password.Location = new System.Drawing.Point(424, 238);
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.PasswordChar = '*';
             this.txt_Password.Size = new System.Drawing.Size(291, 26);
@@ -87,10 +87,11 @@
             // btn_Login
             // 
             this.btn_Login.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_Login.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Login.Location = new System.Drawing.Point(387, 235);
+            this.btn_Login.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Login.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Login.Location = new System.Drawing.Point(424, 304);
             this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(118, 33);
+            this.btn_Login.Size = new System.Drawing.Size(130, 42);
             this.btn_Login.TabIndex = 7;
             this.btn_Login.Text = "Đăng nhập";
             this.btn_Login.UseVisualStyleBackColor = false;
@@ -98,10 +99,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Do_An_DotNet.Properties.Resources.Conan;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 78);
+            this.pictureBox1.Image = global::Do_An_DotNet.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(-8, 75);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(190, 309);
+            this.pictureBox1.Size = new System.Drawing.Size(288, 294);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -110,6 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(734, 457);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_Login);

@@ -45,10 +45,10 @@
             this.btn_nhapThongtin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_nhapThongtin.Image = global::Do_An_DotNet.Properties.Resources.add__1_;
             this.btn_nhapThongtin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_nhapThongtin.Location = new System.Drawing.Point(682, 685);
+            this.btn_nhapThongtin.Location = new System.Drawing.Point(692, 691);
             this.btn_nhapThongtin.Margin = new System.Windows.Forms.Padding(2);
             this.btn_nhapThongtin.Name = "btn_nhapThongtin";
-            this.btn_nhapThongtin.Size = new System.Drawing.Size(174, 47);
+            this.btn_nhapThongtin.Size = new System.Drawing.Size(164, 42);
             this.btn_nhapThongtin.TabIndex = 11;
             this.btn_nhapThongtin.Text = "Nhập Thông Tin";
             this.btn_nhapThongtin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -80,18 +80,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(280, 20);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(308, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(283, 31);
+            this.label1.Size = new System.Drawing.Size(300, 31);
             this.label1.TabIndex = 6;
             this.label1.Text = "QUẢN LÝ GIAO DỊCH";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgv_phieuChi);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(33, 68);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(823, 264);
@@ -102,7 +102,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgv_phieuNhap);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(40, 350);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(816, 305);
@@ -114,6 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_nhapThongtin);
             this.Controls.Add(this.groupBox1);

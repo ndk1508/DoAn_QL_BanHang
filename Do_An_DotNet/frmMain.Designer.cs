@@ -50,7 +50,7 @@
             // 
             // pnlMenu
             // 
-            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.pnlMenu.BackColor = System.Drawing.Color.Silver;
             this.pnlMenu.Controls.Add(this.btn_dangXuat);
             this.pnlMenu.Controls.Add(this.btn_Home);
             this.pnlMenu.Controls.Add(this.lbl_vaiTro);
@@ -82,19 +82,19 @@
             // 
             // btn_Home
             // 
-            this.btn_Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btn_Home.BackColor = System.Drawing.SystemColors.GrayText;
             this.btn_Home.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Home.FlatAppearance.BorderSize = 0;
             this.btn_Home.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btn_Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Home.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Home.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Home.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_Home.Image = global::Do_An_DotNet.Properties.Resources.house__1_;
             this.btn_Home.Location = new System.Drawing.Point(-1, 195);
             this.btn_Home.Name = "btn_Home";
             this.btn_Home.Size = new System.Drawing.Size(287, 62);
             this.btn_Home.TabIndex = 37;
-            this.btn_Home.Text = "Trang chủ";
+            this.btn_Home.Text = "TRANG CHỦ";
             this.btn_Home.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Home.UseVisualStyleBackColor = false;
@@ -134,12 +134,12 @@
             // 
             // btn_nhanVien
             // 
-            this.btn_nhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btn_nhanVien.BackColor = System.Drawing.SystemColors.GrayText;
             this.btn_nhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_nhanVien.FlatAppearance.BorderSize = 0;
             this.btn_nhanVien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btn_nhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_nhanVien.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nhanVien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_nhanVien.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_nhanVien.Image = global::Do_An_DotNet.Properties.Resources.business__2_;
             this.btn_nhanVien.ImageAlign = System.Drawing.ContentAlignment.TopRight;
@@ -147,7 +147,7 @@
             this.btn_nhanVien.Name = "btn_nhanVien";
             this.btn_nhanVien.Size = new System.Drawing.Size(285, 62);
             this.btn_nhanVien.TabIndex = 23;
-            this.btn_nhanVien.Text = "Quản lý nhân viên";
+            this.btn_nhanVien.Text = "QUẢN LÝ NHÂN VIÊN";
             this.btn_nhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_nhanVien.UseVisualStyleBackColor = false;
             this.btn_nhanVien.Click += new System.EventHandler(this.btn_nhanVien_Click);
@@ -165,32 +165,32 @@
             // 
             // btn_khachHang
             // 
-            this.btn_khachHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btn_khachHang.BackColor = System.Drawing.SystemColors.GrayText;
             this.btn_khachHang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_khachHang.FlatAppearance.BorderSize = 0;
             this.btn_khachHang.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btn_khachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_khachHang.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_khachHang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_khachHang.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_khachHang.Image = global::Do_An_DotNet.Properties.Resources.rating__3_;
             this.btn_khachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_khachHang.Location = new System.Drawing.Point(-1, 331);
             this.btn_khachHang.Name = "btn_khachHang";
-            this.btn_khachHang.Size = new System.Drawing.Size(286, 62);
+            this.btn_khachHang.Size = new System.Drawing.Size(287, 62);
             this.btn_khachHang.TabIndex = 24;
-            this.btn_khachHang.Text = "Quản lý khách hàng";
+            this.btn_khachHang.Text = "QUẢN LÝ KHÁCH HÀNG";
             this.btn_khachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_khachHang.UseVisualStyleBackColor = false;
             this.btn_khachHang.Click += new System.EventHandler(this.btn_khachHang_Click);
             // 
             // btn_NhaCC
             // 
-            this.btn_NhaCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btn_NhaCC.BackColor = System.Drawing.SystemColors.GrayText;
             this.btn_NhaCC.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_NhaCC.FlatAppearance.BorderSize = 0;
             this.btn_NhaCC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btn_NhaCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_NhaCC.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_NhaCC.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_NhaCC.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_NhaCC.Image = global::Do_An_DotNet.Properties.Resources.manufacture__1_;
             this.btn_NhaCC.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -198,19 +198,19 @@
             this.btn_NhaCC.Name = "btn_NhaCC";
             this.btn_NhaCC.Size = new System.Drawing.Size(286, 62);
             this.btn_NhaCC.TabIndex = 30;
-            this.btn_NhaCC.Text = "Nhà cung cấp";
+            this.btn_NhaCC.Text = "NHÀ CUNG CẤP";
             this.btn_NhaCC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_NhaCC.UseVisualStyleBackColor = false;
             this.btn_NhaCC.Click += new System.EventHandler(this.btn_NhaPP_Click);
             // 
             // btn_sanPham
             // 
-            this.btn_sanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btn_sanPham.BackColor = System.Drawing.SystemColors.GrayText;
             this.btn_sanPham.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_sanPham.FlatAppearance.BorderSize = 0;
             this.btn_sanPham.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btn_sanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_sanPham.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sanPham.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_sanPham.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_sanPham.Image = global::Do_An_DotNet.Properties.Resources.shoes__1_;
             this.btn_sanPham.ImageAlign = System.Drawing.ContentAlignment.TopRight;
@@ -218,19 +218,19 @@
             this.btn_sanPham.Name = "btn_sanPham";
             this.btn_sanPham.Size = new System.Drawing.Size(285, 62);
             this.btn_sanPham.TabIndex = 26;
-            this.btn_sanPham.Text = "Quản lý sản phẩm";
+            this.btn_sanPham.Text = "QUẢN LÝ SẢN PHẨM";
             this.btn_sanPham.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_sanPham.UseVisualStyleBackColor = false;
             this.btn_sanPham.Click += new System.EventHandler(this.btn_sanPham_Click);
             // 
             // btn_giaoDich
             // 
-            this.btn_giaoDich.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btn_giaoDich.BackColor = System.Drawing.SystemColors.GrayText;
             this.btn_giaoDich.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_giaoDich.FlatAppearance.BorderSize = 0;
             this.btn_giaoDich.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btn_giaoDich.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_giaoDich.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_giaoDich.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_giaoDich.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_giaoDich.Image = global::Do_An_DotNet.Properties.Resources.card_payment__1_;
             this.btn_giaoDich.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -238,19 +238,19 @@
             this.btn_giaoDich.Name = "btn_giaoDich";
             this.btn_giaoDich.Size = new System.Drawing.Size(286, 62);
             this.btn_giaoDich.TabIndex = 27;
-            this.btn_giaoDich.Text = "Quản lý giao dịch";
+            this.btn_giaoDich.Text = "QUẢN LÝ GIAO DỊCH";
             this.btn_giaoDich.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_giaoDich.UseVisualStyleBackColor = false;
             this.btn_giaoDich.Click += new System.EventHandler(this.btn_giaoDich_Click);
             // 
             // btn_donHang
             // 
-            this.btn_donHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btn_donHang.BackColor = System.Drawing.SystemColors.GrayText;
             this.btn_donHang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_donHang.FlatAppearance.BorderSize = 0;
             this.btn_donHang.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btn_donHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_donHang.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_donHang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_donHang.ForeColor = System.Drawing.SystemColors.Control;
             this.btn_donHang.Image = global::Do_An_DotNet.Properties.Resources.invoice__1_;
             this.btn_donHang.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -258,7 +258,7 @@
             this.btn_donHang.Name = "btn_donHang";
             this.btn_donHang.Size = new System.Drawing.Size(286, 62);
             this.btn_donHang.TabIndex = 29;
-            this.btn_donHang.Text = "Quản lý đơn hàng";
+            this.btn_donHang.Text = "QUẢN LÝ ĐƠN HÀNG";
             this.btn_donHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_donHang.UseVisualStyleBackColor = false;
             this.btn_donHang.Click += new System.EventHandler(this.btn_donHang_Click);

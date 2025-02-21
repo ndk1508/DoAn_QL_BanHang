@@ -53,6 +53,7 @@
             // 
             // grb_dsNV
             // 
+            this.grb_dsNV.BackColor = System.Drawing.SystemColors.Control;
             this.grb_dsNV.Controls.Add(this.btn_timKiem);
             this.grb_dsNV.Controls.Add(this.dgv_QLNhanvien);
             this.grb_dsNV.Controls.Add(this.txt_timKiem);
@@ -77,6 +78,7 @@
             // 
             // dgv_QLNhanvien
             // 
+            this.dgv_QLNhanvien.BackgroundColor = System.Drawing.Color.Silver;
             this.dgv_QLNhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_QLNhanvien.Location = new System.Drawing.Point(0, 86);
             this.dgv_QLNhanvien.Name = "dgv_QLNhanvien";
@@ -112,17 +114,18 @@
             // 
             // btn_xoaNhanvien
             // 
+            this.btn_xoaNhanvien.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_xoaNhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_xoaNhanvien.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_xoaNhanvien.ForeColor = System.Drawing.Color.Red;
             this.btn_xoaNhanvien.Image = global::Do_An_DotNet.Properties.Resources.delete__1_;
             this.btn_xoaNhanvien.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_xoaNhanvien.Location = new System.Drawing.Point(668, 667);
+            this.btn_xoaNhanvien.Location = new System.Drawing.Point(719, 679);
             this.btn_xoaNhanvien.Name = "btn_xoaNhanvien";
-            this.btn_xoaNhanvien.Size = new System.Drawing.Size(186, 52);
+            this.btn_xoaNhanvien.Size = new System.Drawing.Size(135, 40);
             this.btn_xoaNhanvien.TabIndex = 6;
             this.btn_xoaNhanvien.Text = "Xóa";
             this.btn_xoaNhanvien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_xoaNhanvien.UseVisualStyleBackColor = true;
+            this.btn_xoaNhanvien.UseVisualStyleBackColor = false;
             this.btn_xoaNhanvien.Click += new System.EventHandler(this.btn_xoaNhanvien_Click);
             // 
             // btn_suaNhanvien
@@ -130,9 +133,9 @@
             this.btn_suaNhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_suaNhanvien.Image = global::Do_An_DotNet.Properties.Resources.service__1_;
             this.btn_suaNhanvien.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_suaNhanvien.Location = new System.Drawing.Point(373, 667);
+            this.btn_suaNhanvien.Location = new System.Drawing.Point(594, 679);
             this.btn_suaNhanvien.Name = "btn_suaNhanvien";
-            this.btn_suaNhanvien.Size = new System.Drawing.Size(186, 52);
+            this.btn_suaNhanvien.Size = new System.Drawing.Size(119, 40);
             this.btn_suaNhanvien.TabIndex = 4;
             this.btn_suaNhanvien.Text = "Sửa";
             this.btn_suaNhanvien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -144,9 +147,9 @@
             this.btn_dangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_dangKy.Image = global::Do_An_DotNet.Properties.Resources.add__1_;
             this.btn_dangKy.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_dangKy.Location = new System.Drawing.Point(46, 667);
+            this.btn_dangKy.Location = new System.Drawing.Point(418, 679);
             this.btn_dangKy.Name = "btn_dangKy";
-            this.btn_dangKy.Size = new System.Drawing.Size(186, 52);
+            this.btn_dangKy.Size = new System.Drawing.Size(166, 40);
             this.btn_dangKy.TabIndex = 1;
             this.btn_dangKy.Text = "Thêm nhân viên";
             this.btn_dangKy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -157,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.grb_dsNV);
             this.Controls.Add(this.btn_xoaNhanvien);
             this.Controls.Add(this.btn_suaNhanvien);

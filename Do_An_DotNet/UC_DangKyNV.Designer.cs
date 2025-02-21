@@ -268,11 +268,11 @@
             this.lbl_dangKi.AutoSize = true;
             this.lbl_dangKi.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_dangKi.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lbl_dangKi.Location = new System.Drawing.Point(319, 72);
+            this.lbl_dangKi.Location = new System.Drawing.Point(265, 78);
             this.lbl_dangKi.Name = "lbl_dangKi";
-            this.lbl_dangKi.Size = new System.Drawing.Size(272, 36);
+            this.lbl_dangKi.Size = new System.Drawing.Size(348, 36);
             this.lbl_dangKi.TabIndex = 5;
-            this.lbl_dangKi.Text = "Đăng Kí Thành Viên";
+            this.lbl_dangKi.Text = "ĐĂNG KÍ THÀNH VIÊN";
             this.lbl_dangKi.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btn_troVe
@@ -281,9 +281,9 @@
             this.btn_troVe.ForeColor = System.Drawing.Color.Red;
             this.btn_troVe.Image = global::Do_An_DotNet.Properties.Resources.logout__1_;
             this.btn_troVe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_troVe.Location = new System.Drawing.Point(685, 618);
+            this.btn_troVe.Location = new System.Drawing.Point(558, 640);
             this.btn_troVe.Name = "btn_troVe";
-            this.btn_troVe.Size = new System.Drawing.Size(152, 52);
+            this.btn_troVe.Size = new System.Drawing.Size(135, 40);
             this.btn_troVe.TabIndex = 9;
             this.btn_troVe.Text = "Trở về";
             this.btn_troVe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -296,9 +296,9 @@
             this.btn_Luu.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btn_Luu.Image = global::Do_An_DotNet.Properties.Resources.add__1_;
             this.btn_Luu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Luu.Location = new System.Drawing.Point(501, 618);
+            this.btn_Luu.Location = new System.Drawing.Point(706, 640);
             this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.Size = new System.Drawing.Size(153, 52);
+            this.btn_Luu.Size = new System.Drawing.Size(131, 40);
             this.btn_Luu.TabIndex = 8;
             this.btn_Luu.Text = "Lưu";
             this.btn_Luu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

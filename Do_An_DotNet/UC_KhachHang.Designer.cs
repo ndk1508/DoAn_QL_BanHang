@@ -32,6 +32,8 @@
             this.btn_themkhachHang = new System.Windows.Forms.Button();
             this.btn_suaKhachHang = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_hiengrb2 = new System.Windows.Forms.Button();
+            this.btn_grb2 = new System.Windows.Forms.Button();
             this.txt_timKiem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dgv_khachHang = new System.Windows.Forms.DataGridView();
@@ -46,8 +48,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_hoTenKH = new System.Windows.Forms.TextBox();
-            this.btn_grb2 = new System.Windows.Forms.Button();
-            this.btn_hiengrb2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_khachHang)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -56,10 +56,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.Location = new System.Drawing.Point(273, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(344, 33);
+            this.label1.Size = new System.Drawing.Size(340, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ KHÁCH HÀNG";
             // 
@@ -70,9 +71,9 @@
             this.btn_themkhachHang.ForeColor = System.Drawing.Color.OldLace;
             this.btn_themkhachHang.Image = global::Do_An_DotNet.Properties.Resources.add__1_;
             this.btn_themkhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_themkhachHang.Location = new System.Drawing.Point(630, 233);
+            this.btn_themkhachHang.Location = new System.Drawing.Point(675, 253);
             this.btn_themkhachHang.Name = "btn_themkhachHang";
-            this.btn_themkhachHang.Size = new System.Drawing.Size(128, 48);
+            this.btn_themkhachHang.Size = new System.Drawing.Size(128, 42);
             this.btn_themkhachHang.TabIndex = 1;
             this.btn_themkhachHang.Text = "Thêm";
             this.btn_themkhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -85,9 +86,9 @@
             this.btn_suaKhachHang.ForeColor = System.Drawing.Color.Red;
             this.btn_suaKhachHang.Image = global::Do_An_DotNet.Properties.Resources.service__1_;
             this.btn_suaKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_suaKhachHang.Location = new System.Drawing.Point(469, 233);
+            this.btn_suaKhachHang.Location = new System.Drawing.Point(559, 253);
             this.btn_suaKhachHang.Name = "btn_suaKhachHang";
-            this.btn_suaKhachHang.Size = new System.Drawing.Size(132, 48);
+            this.btn_suaKhachHang.Size = new System.Drawing.Size(110, 42);
             this.btn_suaKhachHang.TabIndex = 4;
             this.btn_suaKhachHang.Text = "Sửa";
             this.btn_suaKhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -104,27 +105,56 @@
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(30, 85);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(833, 343);
+            this.groupBox1.Size = new System.Drawing.Size(833, 356);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DANH SÁCH KHÁCH HÀNG";
             // 
+            // btn_hiengrb2
+            // 
+            this.btn_hiengrb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_hiengrb2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_hiengrb2.Image = global::Do_An_DotNet.Properties.Resources.service__1_;
+            this.btn_hiengrb2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_hiengrb2.Location = new System.Drawing.Point(703, 304);
+            this.btn_hiengrb2.Name = "btn_hiengrb2";
+            this.btn_hiengrb2.Size = new System.Drawing.Size(124, 46);
+            this.btn_hiengrb2.TabIndex = 7;
+            this.btn_hiengrb2.Text = "Sửa";
+            this.btn_hiengrb2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_hiengrb2.UseVisualStyleBackColor = true;
+            this.btn_hiengrb2.Click += new System.EventHandler(this.btn_hiengrb2_Click);
+            // 
+            // btn_grb2
+            // 
+            this.btn_grb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_grb2.Image = global::Do_An_DotNet.Properties.Resources.add__1_;
+            this.btn_grb2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_grb2.Location = new System.Drawing.Point(521, 304);
+            this.btn_grb2.Name = "btn_grb2";
+            this.btn_grb2.Size = new System.Drawing.Size(176, 46);
+            this.btn_grb2.TabIndex = 6;
+            this.btn_grb2.Text = "Thêm khách hàng";
+            this.btn_grb2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_grb2.UseVisualStyleBackColor = true;
+            this.btn_grb2.Click += new System.EventHandler(this.btn_grb2_Click);
+            // 
             // txt_timKiem
             // 
-            this.txt_timKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_timKiem.Location = new System.Drawing.Point(92, 41);
+            this.txt_timKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_timKiem.Location = new System.Drawing.Point(124, 34);
             this.txt_timKiem.Name = "txt_timKiem";
-            this.txt_timKiem.Size = new System.Drawing.Size(358, 26);
+            this.txt_timKiem.Size = new System.Drawing.Size(358, 35);
             this.txt_timKiem.TabIndex = 4;
             this.txt_timKiem.TextChanged += new System.EventHandler(this.txt_timKiem_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 44);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(14, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 20);
+            this.label2.Size = new System.Drawing.Size(104, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Tìm kiếm:";
             // 
@@ -137,7 +167,7 @@
             this.dgv_khachHang.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dgv_khachHang.Location = new System.Drawing.Point(12, 82);
             this.dgv_khachHang.Name = "dgv_khachHang";
-            this.dgv_khachHang.Size = new System.Drawing.Size(815, 203);
+            this.dgv_khachHang.Size = new System.Drawing.Size(815, 216);
             this.dgv_khachHang.TabIndex = 2;
             this.dgv_khachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_khachHang_CellClick);
             // 
@@ -166,9 +196,11 @@
             // 
             // dtp_ngaySinhKH
             // 
+            this.dtp_ngaySinhKH.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_ngaySinhKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_ngaySinhKH.Location = new System.Drawing.Point(154, 177);
             this.dtp_ngaySinhKH.Name = "dtp_ngaySinhKH";
-            this.dtp_ngaySinhKH.Size = new System.Drawing.Size(374, 31);
+            this.dtp_ngaySinhKH.Size = new System.Drawing.Size(261, 26);
             this.dtp_ngaySinhKH.TabIndex = 18;
             // 
             // label9
@@ -252,35 +284,6 @@
             this.txt_hoTenKH.Name = "txt_hoTenKH";
             this.txt_hoTenKH.Size = new System.Drawing.Size(261, 26);
             this.txt_hoTenKH.TabIndex = 11;
-            // 
-            // btn_grb2
-            // 
-            this.btn_grb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_grb2.Image = global::Do_An_DotNet.Properties.Resources.add__1_;
-            this.btn_grb2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_grb2.Location = new System.Drawing.Point(395, 291);
-            this.btn_grb2.Name = "btn_grb2";
-            this.btn_grb2.Size = new System.Drawing.Size(206, 46);
-            this.btn_grb2.TabIndex = 6;
-            this.btn_grb2.Text = "Thêm khách hàng";
-            this.btn_grb2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_grb2.UseVisualStyleBackColor = true;
-            this.btn_grb2.Click += new System.EventHandler(this.btn_grb2_Click);
-            // 
-            // btn_hiengrb2
-            // 
-            this.btn_hiengrb2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_hiengrb2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_hiengrb2.Image = global::Do_An_DotNet.Properties.Resources.service__1_;
-            this.btn_hiengrb2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_hiengrb2.Location = new System.Drawing.Point(607, 291);
-            this.btn_hiengrb2.Name = "btn_hiengrb2";
-            this.btn_hiengrb2.Size = new System.Drawing.Size(206, 46);
-            this.btn_hiengrb2.TabIndex = 7;
-            this.btn_hiengrb2.Text = "Sửa khách hàng";
-            this.btn_hiengrb2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_hiengrb2.UseVisualStyleBackColor = true;
-            this.btn_hiengrb2.Click += new System.EventHandler(this.btn_hiengrb2_Click);
             // 
             // UC_KhachHang
             // 
