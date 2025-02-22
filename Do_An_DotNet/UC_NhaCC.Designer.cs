@@ -64,7 +64,7 @@
             this.groupBox1.Size = new System.Drawing.Size(824, 220);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin nhà phân phối ";
+            this.groupBox1.Text = "Thông tin nhà cung cấp";
             // 
             // cbThuongHieu
             // 
@@ -159,9 +159,9 @@
             this.label3.Location = new System.Drawing.Point(28, 52);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 18);
+            this.label3.Size = new System.Drawing.Size(103, 18);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Nhà phân phối:";
+            this.label3.Text = "Nhà cung cấp:";
             // 
             // dgvNhaPhanPhoi
             // 

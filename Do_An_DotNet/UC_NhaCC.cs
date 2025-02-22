@@ -61,6 +61,12 @@ namespace Do_An_DotNet
                 da.Fill(dt);
 
                 dgvNhaPhanPhoi.DataSource = dt;
+                dgvNhaPhanPhoi.Columns["MA_NSX"].HeaderText = "Mã";
+                dgvNhaPhanPhoi.Columns["MA_TH"].HeaderText = "Mã thương hiệu";
+                dgvNhaPhanPhoi.Columns["TEN_TH"].HeaderText = "Tên thương hiệu";
+                dgvNhaPhanPhoi.Columns["SDT_NSX"].HeaderText = "SDT";
+                dgvNhaPhanPhoi.Columns["TEN_NSX"].HeaderText = "Tên nhà cung cấp";
+                dgvNhaPhanPhoi.Columns["DIACHI_NSX"].HeaderText = "Địa chỉ";
             }
         }
 

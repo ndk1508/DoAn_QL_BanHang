@@ -383,7 +383,7 @@ namespace Winform_DoAn
         }
         private void XoaHoaDon(int maHoaDon)
         {
-            string connectionString = "Data Source=LAPTOP-4VFJEIV4;Initial Catalog=QL_BanHang;Integrated Security=True;Encrypt=False;";
+            string connectionString = "Data Source=DESKTOP-N5BJBSG;Initial Catalog=QL_BanHang;Integrated Security=True;Encrypt=False;";
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();

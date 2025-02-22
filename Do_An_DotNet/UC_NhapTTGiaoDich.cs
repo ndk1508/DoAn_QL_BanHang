@@ -140,14 +140,15 @@ namespace Do_An_DotNet
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     string query = @"
-                INSERT INTO PHIEUNHAPHANG (MA_SANPHAM,TONGTIEN_PN, TONGTIENTHUEGTGT,CHUNGTUGOC_PN, MA_NV, NGAYLAP_PN)
-                VALUES (@MA_SANPHAM, @TONGTIEN_PN, @TONGTIENTHUEGTGT,@CHUNGTUGOC_PN,@MA_NV, @NGAYLAP_PN)";
+                INSERT INTO PHIEUNHAPHANG (MA_SANPHAM,TONGTIEN_PN, TONGTIENTHUEGTGT,CHUNGTUGOC_PN, MA_NV,MA_NSX, NGAYLAP_PN)
+                VALUES (@MA_SANPHAM, @TONGTIEN_PN, @TONGTIENTHUEGTGT,@CHUNGTUGOC_PN,@MA_NV,@MA_NSX, @NGAYLAP_PN)";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@MA_SANPHAM", cbo_sanPham.SelectedValue?.ToString() ?? DBNull.Value.ToString());
                         cmd.Parameters.AddWithValue("@TONGTIEN_PN", Convert.ToDecimal(txt_tongTienPN.Text));
                         cmd.Parameters.AddWithValue("@TONGTIENTHUEGTGT", Convert.ToDecimal(txt_thueVAT.Text));
+                        cmd.Parameters.AddWithValue("@MA_NSX", cbo_NSX.SelectedValue);
                         cmd.Parameters.AddWithValue("@CHUNGTUGOC_PN", rtb_chungTu.Text);
                         cmd.Parameters.AddWithValue("@MA_NV", cbo_nhanVien.SelectedValue);
                         cmd.Parameters.AddWithValue("@NGAYLAP_PN", dtp_ngayLapPN.Value);
